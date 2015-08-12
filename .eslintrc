@@ -1,52 +1,64 @@
-/* https://github.com/FreeCodeCamp/freecodecamp/blob/staging/.eslintrc */
+/* Based on https://github.com/FreeCodeCamp/freecodecamp/blob/staging/.eslintrc */
 {
   "ecmaFeatures": {
     "jsx": true
   },
-  "env": {
-    "browser": true,
-    "mocha": true,
-    "node": true
+  "env": {                           // http://eslint.org/docs/user-guide/configuring.html#specifying-environments
+    "browser": true,                 // browser global variables
+    "node": true                     // Node.js global variables and Node.js-specific rules
   },
-  "parser": "babel-eslint",
+  "parser": "babel-eslint",          // https://github.com/babel/babel-eslint
   "plugins": [
-    "react"
+    "react"                          // https://github.com/yannickcr/eslint-plugin-react
   ],
-  "globals": {
-    "window": true,
-    "$": true,
-    "ga": true,
-    "jQuery": true,
-    "router": true
-  },
   "rules": {
-    "no-comma-dangle": 2,
-    "no-cond-assign": 2,
-    "no-console": 0,
-    "no-constant-condition": 2,
-    "no-control-regex": 2,
-    "no-debugger": 2,
-    "no-dupe-keys": 2,
-    "no-empty": 2,
-    "no-empty-class": 2,
-    "no-ex-assign": 2,
-    "no-extra-boolean-cast": 2,
-    "no-extra-parens": 0,
-    "no-extra-semi": 2,
-    "no-func-assign": 2,
-    "no-inner-declarations": 2,
-    "no-invalid-regexp": 2,
-    "no-irregular-whitespace": 2,
-    "no-negated-in-lhs": 2,
-    "no-obj-calls": 2,
-    "no-regex-spaces": 2,
-    "no-reserved-keys": 0,
-    "no-sparse-arrays": 2,
-    "no-unreachable": 2,
-    "use-isnan": 2,
-    "valid-jsdoc": 2,
-    "valid-typeof": 2,
+/**
+ * Strict mode
+ */
+    "strict": 0,                     // http://eslint.org/docs/rules/strict
 
+/**
+ * Variables
+ */
+    "no-shadow": 2,                  // http://eslint.org/docs/rules/no-shadow
+    "no-shadow-restricted-names": 2, // http://eslint.org/docs/rules/no-shadow-restricted-names
+    "no-unused-vars": [2, {          // http://eslint.org/docs/rules/no-unused-vars
+      "vars": "local",
+      "args": "after-used"
+    }],
+
+/**
+ * Possible errors
+ */
+    "comma-dangle": [2, "never"],    // http://eslint.org/docs/rules/comma-dangle
+    "no-cond-assign": [2, "always"], // http://eslint.org/docs/rules/no-cond-assign
+    "no-console": 1,                 // http://eslint.org/docs/rules/no-console
+    "no-debugger": 1,                // http://eslint.org/docs/rules/no-debugger
+    "no-alert": 1,                   // http://eslint.org/docs/rules/no-alert
+    "no-constant-condition": 1,      // http://eslint.org/docs/rules/no-constant-condition
+    "no-dupe-keys": 2,               // http://eslint.org/docs/rules/no-dupe-keys
+    "no-duplicate-case": 2,          // http://eslint.org/docs/rules/no-duplicate-case
+    "no-empty": 2,                   // http://eslint.org/docs/rules/no-empty
+    "no-empty-character-class": 2,   // http://eslint.org/docs/rules/no-empty-character-class
+    "no-ex-assign": 2,               // http://eslint.org/docs/rules/no-ex-assign
+    "no-extra-boolean-cast": 0,      // http://eslint.org/docs/rules/no-extra-boolean-cast
+    "no-extra-semi": 2,              // http://eslint.org/docs/rules/no-extra-semi
+    "no-func-assign": 2,             // http://eslint.org/docs/rules/no-func-assign
+    "no-inner-declarations": 2,      // http://eslint.org/docs/rules/no-inner-declarations
+    "no-invalid-regexp": 2,          // http://eslint.org/docs/rules/no-invalid-regexp
+    "no-irregular-whitespace": 2,    // http://eslint.org/docs/rules/no-irregular-whitespace
+    "no-negated-in-lhs": 2,          // http://eslint.org/docs/rules/no-negated-in-lhs
+    "no-obj-calls": 2,               // http://eslint.org/docs/rules/no-obj-calls
+    "no-regex-spaces": 2,            // http://eslint.org/docs/rules/no-regex-spaces
+    "no-sparse-arrays": 2,           // http://eslint.org/docs/rules/no-sparse-arrays
+    "no-unreachable": 2,             // http://eslint.org/docs/rules/no-unreachable
+    "use-isnan": 2,                  // http://eslint.org/docs/rules/use-isnan
+    "valid-jsdoc": 2,                // http://eslint.org/docs/rules/valid-jsdoc
+    "valid-typeof": 2,               // http://eslint.org/docs/rules/valid-typeof
+
+/**
+ * Best practices
+ */
     "block-scoped-var": 0,
     "complexity": 0,
     "consistent-return": 2,
@@ -55,7 +67,6 @@
     "dot-notation": 0,
     "eqeqeq": 1,
     "guard-for-in": 1,
-    "no-alert": 1,
     "no-caller": 2,
     "no-div-regex": 2,
     "no-else-return": 0,
@@ -103,18 +114,18 @@
     "wrap-iife": [2, "any"],
     "yoda": 0,
 
-    "strict": 0,
+/**
+ * Style
+ */
+    "no-extra-parens": [2, "functions"],    // http://eslint.org/docs/rules/no-extra-params
 
     "no-catch-shadow": 2,
     "no-delete-var": 2,
     "no-label-var": 2,
-    "no-shadow": 0,
-    "no-shadow-restricted-names": 2,
     "no-undef": 2,
     "no-undef-init": 2,
     "no-undefined": 1,
     "no-unused-vars": 2,
-    "no-use-before-define": 0,
 
     "handle-callback-err": 2,
     "no-mixed-requires": 0,
