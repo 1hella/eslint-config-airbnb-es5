@@ -55,18 +55,19 @@
     "use-isnan": 2,                  // http://eslint.org/docs/rules/use-isnan
     "valid-jsdoc": 2,                // http://eslint.org/docs/rules/valid-jsdoc
     "valid-typeof": 2,               // http://eslint.org/docs/rules/valid-typeof
+    "block-scoped-var": 0,           // http://eslint.org/docs/rules/block-scoped-var
 
 /**
  * Best practices
  */
-    "block-scoped-var": 0,
-    "complexity": 0,
-    "consistent-return": 2,
-    "curly": 2,
-    "default-case": 1,
-    "dot-notation": 0,
-    "eqeqeq": 1,
-    "guard-for-in": 1,
+    "consistent-return": 2,          // http://eslint.org/docs/rules/consistent-return
+    "curly": [2, "multi-line"],      // http://eslint.org/docs/rules/curly
+    "default-case": 2,               // http://eslint.org/docs/rules/default-case
+    "dot-notation": [2, {            // http://eslint.org/docs/rules/dot-notation
+      "allowKeywords": true
+    }],
+    "eqeqeq": 2,                     // http://eslint.org/docs/rules/eqeqeq
+    "guard-for-in": 2,               // http://eslint.org/docs/rules/guard-for-in
     "no-caller": 2,
     "no-div-regex": 2,
     "no-else-return": 0,
