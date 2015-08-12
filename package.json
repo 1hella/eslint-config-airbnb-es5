@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-airbnb-es5",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Unofficial Airbnb ESLint config, following their ES5 style guide",
   "main": "index.js",
   "scripts": {
