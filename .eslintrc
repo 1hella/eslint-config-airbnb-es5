@@ -41,7 +41,6 @@
     "no-empty": 2,                   // http://eslint.org/docs/rules/no-empty
     "no-empty-character-class": 2,   // http://eslint.org/docs/rules/no-empty-character-class
     "no-ex-assign": 2,               // http://eslint.org/docs/rules/no-ex-assign
-    "no-extra-boolean-cast": 0,      // http://eslint.org/docs/rules/no-extra-boolean-cast
     "no-extra-semi": 2,              // http://eslint.org/docs/rules/no-extra-semi
     "no-func-assign": 2,             // http://eslint.org/docs/rules/no-func-assign
     "no-inner-declarations": 2,      // http://eslint.org/docs/rules/no-inner-declarations
@@ -57,7 +56,6 @@
     "use-isnan": 2,                  // http://eslint.org/docs/rules/use-isnan
     "valid-jsdoc": 2,                // http://eslint.org/docs/rules/valid-jsdoc
     "valid-typeof": 2,               // http://eslint.org/docs/rules/valid-typeof
-    "block-scoped-var": 0,           // http://eslint.org/docs/rules/block-scoped-var
 
 /**
  * Best practices
@@ -148,7 +146,6 @@
     "no-spaced-func": 2,             // http://eslint.org/docs/rules/no-spaced-func
     "no-trailing-spaces": 2,         // http://eslint.org/docs/rules/no-trailing-spaces
     "no-extra-parens": [2, "functions"], // http://eslint.org/docs/rules/no-extra-params
-    "no-underscore-dangle": 0,       // http://eslint.org/docs/rules/no-underscore-dangle
     "one-var": [2, "never"],         // http://eslint.org/docs/rules/one-var
     "padded-blocks": [2, "never"],   // http://eslint.org/docs/rules/padded-blocks
     "semi": [2, "always"],           // http://eslint.org/docs/rules/semi
