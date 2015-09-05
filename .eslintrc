@@ -2,16 +2,16 @@
 {
   "ecmaFeatures": {
     "jsx": true
-  },
+    },
   "env": {                           // http://eslint.org/docs/user-guide/configuring.html#specifying-environments
     "browser": true,                 // browser global variables
     "node": true                     // Node.js global variables and Node.js-specific rules
-  },
+    },
   "parser": "babel-eslint",          // https://github.com/babel/babel-eslint
   "plugins": [
     "react"                          // https://github.com/yannickcr/eslint-plugin-react
-  ],
-  "rules": {
+    ],
+    "rules": {
 /**
  * Strict mode
  */
@@ -25,7 +25,7 @@
     "no-unused-vars": [2, {          // http://eslint.org/docs/rules/no-unused-vars
       "vars": "local",
       "args": "after-used"
-    }],
+      }],
 
 /**
  * Possible errors
@@ -65,7 +65,7 @@
     "default-case": 2,               // http://eslint.org/docs/rules/default-case
     "dot-notation": [2, {            // http://eslint.org/docs/rules/dot-notation
       "allowKeywords": true
-    }],
+      }],
     "eqeqeq": 2,                     // http://eslint.org/docs/rules/eqeqeq
     "guard-for-in": 2,               // http://eslint.org/docs/rules/guard-for-in
     "no-caller": 2,                  // http://eslint.org/docs/rules/no-caller
@@ -111,36 +111,36 @@
  */
     "indent": [2, 2],                // http://eslint.org/docs/rules/indent
     "brace-style": [2,               // http://eslint.org/docs/rules/brace-style
-      "1tbs", {
+    "1tbs", {
       "allowSingleLine": true
-    }],
+      }],
     "quotes": [                      // http://eslint.org/docs/rules/quotes
-      2, "single", "avoid-escape"
+    2, "single", "avoid-escape"
     ],
     "camelcase": [2, {               // http://eslint.org/docs/rules/camelcase
       "properties": "never"
-    }],
+      }],
     "comma-spacing": [2, {           // http://eslint.org/docs/rules/comma-spacing
       "before": false,
       "after": true
-    }],
+      }],
     "comma-style": [2, "last"],      // http://eslint.org/docs/rules/comma-style
     "eol-last": 2,                   // http://eslint.org/docs/rules/eol-last
     "func-names": 1,                 // http://eslint.org/docs/rules/func-names
     "key-spacing": [2, {             // http://eslint.org/docs/rules/key-spacing
         "beforeColon": false,
         "afterColon": true
-    }],
+        }],
     "new-cap": [2, {                 // http://eslint.org/docs/rules/new-cap
       "newIsCap": true
-    }],
+      }],
     "new-parens": 2,                 // http://eslint.org/docs/rules/new-parens
     "no-array-constructor": 2,       // http://eslint.org/docs/rules/no-array-constructor
     "no-lonely-if": 1,               // http://eslint.org/docs/rules/no-lonely-if
     "no-mixed-spaces-and-tabs": 1,   // http://eslint.org/docs/rules/no-mixed-spaces-and-tabs
     "no-multiple-empty-lines": [2, { // http://eslint.org/docs/rules/no-multiple-empty-lines
       "max": 2 
-    }],
+      }],
     "no-nested-ternary": 2,          // http://eslint.org/docs/rules/no-nested-ternary
     "no-new-object": 2,              // http://eslint.org/docs/rules/no-new-object
     "no-spaced-func": 2,             // http://eslint.org/docs/rules/no-spaced-func
@@ -152,7 +152,7 @@
     "semi-spacing": [2, {            // http://eslint.org/docs/rules/semi-spacing
       "before": false,
       "after": true
-    }],
+      }],
     "space-after-keywords": 2,       // http://eslint.org/docs/rules/space-after-keywords
     "space-before-blocks": 2,        // http://eslint.org/docs/rules/space-before-blocks
     "space-before-function-paren": [2, "never"], // http://eslint.org/docs/rules/space-before-function-paren
@@ -162,7 +162,7 @@
     "spaced-comment": [2, "always",  {// http://eslint.org/docs/rules/spaced-comment
       "exceptions": ["-", "+"],
       "markers": ["=", "!"]          // space here to support sprockets directives
-    }],
+      }],
 
 /**
  * JSX style
@@ -182,15 +182,6 @@
     "react/prop-types": 2,           // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md
     "react/react-in-jsx-scope": 2,   // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md
     "react/self-closing-comp": 2,    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/self-closing-comp.md
-    "react/wrap-multilines": 2,      // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/wrap-multilines.md
-    "react/sort-comp": [2, {         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-comp.md
-      "order": [
-        "lifecycle",
-        "/^on.+$/",
-        "/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/",
-        "everything-else",
-        "/^render.+$/",
-        "render"
-      ]
-    }]
+    "react/wrap-multilines": 2      // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/wrap-multilines.md
+  }
 }
