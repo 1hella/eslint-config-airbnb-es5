@@ -3,7 +3,7 @@ This package provides an Unofficial Airbnb ESLint config, following their ES5 st
 
 ## Usage
 
-1. `npm install --save-dev eslint-config-airbnb-es5 babel-eslint eslint-plugin-react`
+1. `npm install --save-dev eslint-config-airbnb-es5 babel-eslint@6.x eslint-plugin-react`
 2. add `"extends": "eslint-config-airbnb-es5"` to your .eslintrc
 
 You may need to install the package globally for it to be found by the parser if you have ESLint installed globally.
